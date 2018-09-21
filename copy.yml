@@ -1,8 +1,10 @@
 ---
-- name: Copy test
-  copy: 
-    src: /home/cobasema 
-    dest: /root/cobasema
-    owner: root
-    group: root
-    mode: 644
+- hosts: all
+  tasks:
+      - name: ensure nginx is at the latest version
+        copy: 
+          src: /home/cobasema 
+          dest: /root/cobasema
+          owner: root
+          group: root
+          mode: 644

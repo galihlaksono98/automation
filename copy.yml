@@ -1,4 +1,4 @@
-tasks:
-  - name: Copy test
+---
+- name: Copy test
     copy: src=/home/cobasema dest=/root/cobasema
             owner=root group=root mode=0644

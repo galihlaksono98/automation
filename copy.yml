@@ -1,4 +1,8 @@
 ---
 - name: Copy test
-    copy: src=/home/cobasema dest=/root/cobasema
-            owner=root group=root mode=0644
+  copy: 
+    src: /home/cobasema 
+    dest: /root/cobasema
+    owner: root
+    group: root
+    mode: 644
